@@ -4,5 +4,5 @@ phases:
     commands:
       - echo "test build"
       - echo $COMMITID
-      - git tag -l --contains $COMMITID
-      
+      - git tag -l --contains $COMMITID > test.txt
+      - cat test.txt
