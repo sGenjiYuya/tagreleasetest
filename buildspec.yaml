@@ -1,5 +1,8 @@
 version: 0.2
-phase:
+phases:
   build:
     commands:
       - echo "test build"
+      - echo $COMMITID
+      - git tag -l --contains $COMMITID
+      
