@@ -5,6 +5,7 @@ phases:
       - echo "test build"
       - echo "add tag"
       - echo "commit1"
+      - echo "commit2"
       - echo $COMMITID
       - echo $CODEBUILD_WEBHOOK_EVENT
       - echo $CODEBUILD_WEBHOOK_TRIGGER
