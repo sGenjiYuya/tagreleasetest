@@ -4,5 +4,9 @@ phases:
     commands:
       - echo "test build"
       - echo $COMMITID
+      - echo $CODEBUILD_WEBHOOK_EVENT
+      - echo $CODEBUILD_WEBHOOK_TRIGGER
       - git tag -l --contains $COMMITID > test.txt
       - cat test.txt
+      - codebuild-breakpoint
+      - echo 'build completed'
