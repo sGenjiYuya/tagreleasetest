@@ -9,6 +9,7 @@ phases:
       - echo $COMMITID
       - echo $CODEBUILD_WEBHOOK_EVENT
       - echo $CODEBUILD_WEBHOOK_TRIGGER
+      - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
       - git tag -l --contains $COMMITID > test.txt
       - cat test.txt
       - printenv
