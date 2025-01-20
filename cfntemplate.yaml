@@ -1,0 +1,3 @@
+Resources:
+  Test:
+    Type: AWS::S3::Bucket
